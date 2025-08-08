@@ -1,0 +1,20 @@
+{
+  "name": "cucumber-web-puppeteer",
+  "version": "1.0.0",
+  "description": "Web automation testing framework using Cucumber and Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:report": "cucumber-js --format html:reports/cucumber-report.html",
+    "test:ci": "cucumber-js --format html:reports/cucumber-report.html --format json:reports/cucumber-report.json",
+    "test:headless": "CI=true npm run test:report"
+  },
+  "keywords": ["cucumber", "puppeteer", "automation", "testing"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "puppeteer": "^21.5.2",
+    "chai": "^4.3.10"
+  }
+}
